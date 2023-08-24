@@ -11,7 +11,7 @@ def index():
     if cpu_percent > 80 or mem_percent > 80:
         Message = "High CPU or Memory Utilization detected. Please scale up"
     
-    return f"CPU Utilization: {cpu_percent} and Memoru Utilization: {mem_percent}"
+    return f"CPU Utilization: {cpu_percent} and Memory Utilization: {mem_percent}"
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
